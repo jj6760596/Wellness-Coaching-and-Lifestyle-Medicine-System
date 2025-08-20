@@ -1,0 +1,19 @@
+[project]
+name = 'Wellness-Coaching-and-Lifestyle-Medicine-System'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.coach-management]
+path = 'contracts/coach-management.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
